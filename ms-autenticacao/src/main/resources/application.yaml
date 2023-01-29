@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: auth_micro_service
+
+server:
+  port: 8070
+
+eldorado:
+  jwt:
+    secret: KaPdRgUkXp2s5v8y/B?E(H+MbQeThVmYq3t6w9z$C&F)J@NcRfUjXnZr4u7x!A%D
+    expirationMs: 300000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
